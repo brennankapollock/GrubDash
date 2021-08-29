@@ -1,10 +1,9 @@
-const { PORT = 5000 } = process.env;
+require('dotenv').config();
 
-const path = require("path");
-const app = require(path.resolve(
-  `${process.env.SOLUTION_PATH || ""}`,
-  "src/app"
-));
+
+const PORT = process.env.API_PATH
+
+const app = require("./app")
 
 const listener = () => console.log(`Listening on Port ${PORT}!`);
 app.listen(PORT, listener);

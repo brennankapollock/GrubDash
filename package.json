@@ -25,6 +25,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "cross-conf-env": "^1.2.1",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1"
   },
   "devDependencies": {
